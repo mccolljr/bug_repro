@@ -1,0 +1,17 @@
+[package]
+name = "ra_issue_repro"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "ra_issue_repro"
+test = false
+bench = false
+
+
+[dependencies]
+embedded-hal = "0.2.7"
+panic-halt = "0.2.0"
+usb-device = "0.2.9"
+usbd-serial = "0.1.1"
+xiao_m0 = { version = "0.12.0" }

@@ -77,14 +77,6 @@ mod mypins {
         // construct an instance of the Pins type declared through the macro
         // above...
         let pins = Pins::new(fake_port);
-
-        // BUG:
-        // BUG: rust-analyzer reports the type of _pin as `unknown`,
-        // BUG: but it shold be ::atsamd_hal::Pin<...>...
-        // BUG:
-        // BUG: rustc correctly understands the type here
-        // BUG:
-        // BUG:
         let _pin = pins.testpin;
     }
 }
